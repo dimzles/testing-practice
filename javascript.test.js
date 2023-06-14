@@ -1,4 +1,4 @@
-import { capitalise, reverseStr } from "./javascript.js";
+import { capitalise, reverseStr, calculator } from "./javascript.js";
 
 test('Capitalise the first letter of a string', () => {
     expect(capitalise('potato')).toBe('Potato');

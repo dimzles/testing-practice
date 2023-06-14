@@ -17,3 +17,8 @@ test('Calculator doing add/subtract/divide/multiply', () => {
     expect(calculator.divide(20, 5)).toBe(4);
     expect(calculator.multiply(5, 1)).toBe(5)
 })
+
+test('Caesar cipher function test', () => {
+    expect(caesarCipher('hello world!')).toBe('ifmmp xpsme!')
+    expect(caesarCipher('hello world!', 5)).toBe('mjqqt btwqi!')
+})

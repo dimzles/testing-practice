@@ -21,4 +21,5 @@ test('Calculator doing add/subtract/divide/multiply', () => {
 test('Caesar cipher function test', () => {
     expect(caesarCipher('hello world!')).toBe('ifmmp xpsme!')
     expect(caesarCipher('hello world!', 5)).toBe('mjqqt btwqi!')
+    expect(casesarCipher('HELLO world!')).toBe('IFMMP xpsme!')
 })

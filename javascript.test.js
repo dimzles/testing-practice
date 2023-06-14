@@ -1,4 +1,6 @@
+import { capitalise } from "./javascript.js";
+
 test('Capitalise the first letter of a string', () => {
-    expect('potato').toBe('Potato');
-    expect('straWberry').toBe('Strawberry');
+    expect(capitalise('potato')).toBe('Potato');
+    expect(capitalise('straWberry')).toBe('Strawberry');
 })

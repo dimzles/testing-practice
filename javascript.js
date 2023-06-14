@@ -1,3 +1,7 @@
 export function capitalise(str) {
     return str.charAt(0).toUpperCase() + str.slice(1).toLowerCase()
 }
+
+export function reverseStr(str) {
+    return str.split('').reverse().join('');
+}

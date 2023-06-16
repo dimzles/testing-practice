@@ -23,3 +23,12 @@ test('Caesar cipher function test', () => {
     expect(caesarCipher('hello world!', 5)).toBe('mjqqt btwqi!')
     expect(caesarCipher('HELLO world!')).toBe('IFMMP xpsme!')
 })
+
+test('Analyse array and reutnr object containing avg, min, max & length', () => {
+    expect(analyseArray([1,8,3,4,2,6])).toBe({
+        average: 4,
+        min: 1,
+        max: 8,
+        length: 6
+    })
+}) 

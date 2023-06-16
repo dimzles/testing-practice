@@ -61,3 +61,24 @@ export function caesarCipher(phrase, shift = 1) {
 
     return result;
 }
+
+export function analyseArray(arr) {
+    const length = arr.length;
+    const min = Math.min(...arr)
+    const max = Math.max(...arr)
+    const average = findAverage(arr);
+
+    return {"average": average, "min": min, "max": max, "length": length}
+}
+
+function findAverage(array) {
+    let total = 0;
+    let count = 0;
+
+    array.forEach(element => {
+        total += element;
+        count++
+    })
+
+    return total / count;
+}
